@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+    <script src="https://use.fontawesome.com/3a2eaf6206.js"></script>
+    <div class="body">
+        <h1>Meme Generator</h1>
+        <div class="meme-section">
+            <div class="col1">
+                <h3>Original Image</h3>
+                <div class="image-container">
+                    <img class="original-image" src="demo.jpg" id="original-image" style="height: 300px;width: 300px;">
+
+                </div>
+            </div>
+            <div class="col2">
+                <form class="formSelector">
+
+                    <div class="file-div rainbow-bg">
+                        <label for="inputTag">Select Image<br />
+                            <i class="fa fa-2x fa-camera"></i>
+                            <input type="file" class="file-input" id="inputTag" onChange="preview_2(this);"><br>
+                            <span id="imageName"></span>
+                        </label>
+
+                    </div>
+                    <div class="textbox1">
+                        <textarea style="height: 44px;" id="inp-top" placeholder="Add Top text here"></textarea>
+                        <input type="checkbox">
+
+                    </div>
+                    <div class="textbox2">
+
+                        <textarea style="height: 44px;" id="inp-bot" placeholder="Add Bottom text here"></textarea>
+                        <input type="checkbox">
+                    </div>
+                    <button type="submit" class="download-btn rainbow-bg">Download Meme</button>
+                </form>
+
+            </div>
+            <div class="col3">
+                <h3>Meme Image</h3>
+                <div class="wrapper" id="#wrapperid">
+                    <div class="drag-box drag-top off" style="width: 100%; height: fit-content;" tabindex="0">
+                        <h4 class="top-h4">That friend</h4>
+                    </div>
+
+                    <img class="copy-image" id="original-image" src="demo.jpg" style="height: 300px;width: 300px;">
+
+                    <div class="drag-box drag-bot off" id="draggable" style="width: 100%; height: fit-content;">
+                        <h4 class="bot-h4">when you ask for help</h4>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="template">
+            <h2 class="heading2">Meme Templates</h2>
+            <p>click on the template to use it</p>
+            <div class="collection">
+                <img onClick="preview_1(this);" src="meme9.jpg" style="height: 300px;width: 300px;">
+                <img onClick="preview_1(this);" src="meme8.jpg" style="height: 300px;width: 300px;">
+                <img onClick="preview_1(this);" src="meme1.jpg" style="height: 300px;width: 300px;">
+                <img onClick="preview_1(this);" src="meme2.jpg" style="height: 300px;width: 300px;">
+                <img onClick="preview_1(this);" src="meme3.jpg" style="height: 300px;width: 300px;">
+                <img onClick="preview_1(this);" src="meme4.jpg" style="height: 300px;width: 300px;">
+                <img onClick="preview_1(this);" src="meme5.jpg" style="height: 300px;width: 300px;">
+                <img onClick="preview_1(this);" src="meme7.jpg" style="height: 300px;width: 300px;">
+                <img onClick="preview_1(this);" src="meme10.jpg" style="height: 300px;width: 300px;">
+
+            </div>
+
+        </div>
+        <script src="index.js"></script>
+    </div>
+</body>
+
+</html>
