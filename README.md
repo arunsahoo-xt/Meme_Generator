@@ -6,11 +6,11 @@ About the project:
 
 Issues:
 
- Add text size editor and color picker.
+ 1.Add text size editor and color picker.
 
- Make the website responsive for different screens.
+ 2.Make the website responsive for different screens.
 
- Add a button which allows texts to be written above/below the image instead of over the image.
+ 3.Add a button which allows texts to be written above/below the image instead of over the image.
 
 How to contribute:
 
