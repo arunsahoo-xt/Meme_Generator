@@ -103,6 +103,53 @@ function preview_2(obj)
 }
 }
 
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+
+let image = new Image();
+let topText = "Top Text";
+let bottomText = "Bottom Text";
+let textSize = 30;
+let textColor = "#ffffff";
+
+function drawMeme() {
+  canvas.width = image.width;
+  canvas.height = image.height;
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.drawImage(image, 0, 0);
+  
+  ctx.fillStyle = textColor;
+  ctx.strokeStyle = 'black';
+  ctx.textAlign = 'center';
+  ctx.font = textSize + 'px Impact';
+  
+  // Draw top text
+  ctx.lineWidth = textSize / 20;
+  ctx.strokeText(topText, canvas.width/2, textSize, canvas.width - 20);
+  ctx.fillText(topText, canvas.width/2, textSize, canvas.width - 20);
+  
+  // Draw bottom text
+  ctx.strokeText(bottomText, canvas.width/2, canvas.height - 20, canvas.width - 20);
+  ctx.fillText(bottomText, canvas.width/2, canvas.height - 20, canvas.width - 20);
+}
+
+function changeTextColor() {
+  textColor = document.getElementById('text-color').value;
+  drawMeme();
+}
+
+function changeTextSize() {
+  textSize = document.getElementById('text-size').value;
+  drawMeme();
+}
+
+image.onload = function() {
+  drawMeme();
+};
+
+image.src = 'meme.jpg';
+
+
 $( function() {
 	$(".top-h4").draggable({
 		containment:".wrapper"
