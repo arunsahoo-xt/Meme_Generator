@@ -69,6 +69,16 @@
 
 
         </div>
+        <div>
+            <label for="text-color">Text Color:</label>
+            <input type="color" id="text-color" value="#ffffff" onchange="changeTextColor()">
+          </div>
+          <div>
+            <label for="text-size">Text Size:</label>
+            <input type="range" id="text-size" min="10" max="100" value="30" onchange="changeTextSize()">
+          </div>
+          <canvas id="canvas"></canvas>
+          
         <div class="template">
             <h2 class="heading2">Meme Templates</h2>
             <p>click on the template to use it</p>
