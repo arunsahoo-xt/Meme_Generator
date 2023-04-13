@@ -17,41 +17,49 @@
 .green {
   background: var(--green-color);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .red {
   background: var(--red-color);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .blue {
   background: var(--blue-color);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .yellow {
   background: var(--yellow-color);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .torquise {
   background: var(--torquise-color);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .white {
   background: var(--white-color);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .purple {
   background: var(--purple-color);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .pink {
   background: var(--pink-color);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .container-color {
@@ -79,18 +87,19 @@
   font-weight: 600;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-/* .xlarge {
-  font-size: var(--xlarge);
+
+.xlarge:hover {
+  border-color: var(--yellow-color);
 }
-.large {
-  font-size: var(--large);
+.large:hover {
+  border-color: var(--yellow-color);
 }
-.medium {
-  font-size: var(--medium);
+.medium:hover {
+  border-color: var(--yellow-color);
 }
-.small {
-  font-size: var(--small);
-} */
+.small:hover {
+  border-color: var(--yellow-color);
+}
 
 body {
   margin: 0;
