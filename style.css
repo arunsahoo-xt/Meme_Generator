@@ -75,30 +75,12 @@
   grid-gap: 5px;
   /* background-color: #0275fe; */
 }
-.xlarge,
-.large,
-.medium,
-.small {
-  border-radius: 10px;
-  padding: 5px 10px;
-  background-color: #292828;
-  border: 2px solid whitesmoke;
-  color: #fff;
-  font-weight: 600;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
 
-.xlarge:hover {
-  border-color: var(--yellow-color);
-}
-.large:hover {
-  border-color: var(--yellow-color);
-}
-.medium:hover {
-  border-color: var(--yellow-color);
-}
-.small:hover {
-  border-color: var(--yellow-color);
+.text-slider {
+  margin: 20px;
+  padding: 6px 5px;
+  border: 2px solid whitesmoke;
+  background-color: #000;
 }
 
 body {

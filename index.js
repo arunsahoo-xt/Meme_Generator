@@ -1,6 +1,7 @@
 var outImage = ".original-image";
 var image_ele = document.querySelector(outImage);
 var image_container = document.querySelector(".image-container");
+var range = document.querySelector("#rng1");
 
 /*** Adding selectors color palette *****/
 const green = document.querySelector(".green");
@@ -53,31 +54,13 @@ torquise.addEventListener("click", function (e) {
   var bot_inp = (document.querySelector(".bot-h4").style.color = "#33ffff");
 });
 
-/*** Adding selectors text palette *****/
-const xLarge = document.querySelector(".xlarge");
-const large = document.querySelector(".large");
-const medium = document.querySelector(".medium");
-const small = document.querySelector(".small");
-
-/*** Adding eventListeners text palette to change font size *****/
-xLarge.addEventListener("click", function (e) {
-  var top_inp = (document.querySelector(".top-h4").style.fontSize = "28px");
-  var bot_inp = (document.querySelector(".bot-h4").style.fontSize = "28px");
-});
-
-large.addEventListener("click", function (e) {
-  var top_inp = (document.querySelector(".top-h4").style.fontSize = "25px");
-  var bot_inp = (document.querySelector(".bot-h4").style.fontSize = "25px");
-});
-
-medium.addEventListener("click", function (e) {
-  var top_inp = (document.querySelector(".top-h4").style.fontSize = "20px");
-  var bot_inp = (document.querySelector(".bot-h4").style.fontSize = "20px");
-});
-
-small.addEventListener("click", function (e) {
-  var top_inp = (document.querySelector(".top-h4").style.fontSize = "16px");
-  var bot_inp = (document.querySelector(".bot-h4").style.fontSize = "16px");
+// Added text-slider
+range.addEventListener("input", function textsize() {
+  var top_inp = (document.querySelector(".top-h4").style.fontSize =
+    String(range.value) + "px");
+  console.log(range.value);
+  var bot_inp = (document.querySelector(".bot-h4").style.fontSize =
+    String(range.value) + "px");
 });
 
 /********* Handling checkbox and toggle textbox *********/
