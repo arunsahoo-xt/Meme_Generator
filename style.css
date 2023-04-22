@@ -91,24 +91,16 @@ body {
 }
 
 body h1 {
-  margin-block: 0;
-  padding-top: 30px;
+  padding: 20px;
+  font-weight: bold;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-decoration: underline;
 }
 
 .meme-section {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-top: 20px;
-  margin: 0;
 }
 
 .body {
-  height: 100vh;
-
-  height: fit-content;
   background: rgb(167, 114, 251);
   background: -moz-linear-gradient(
     90deg,
@@ -129,8 +121,6 @@ body h1 {
 }
 
 .image-container {
-  width: 300px;
-  height: 295px;
   border: 3px solid black;
   background-color: rgb(251, 255, 255);
 }
@@ -187,10 +177,6 @@ label {
 .wrapper {
   position: relative;
   display: block;
-  width: 300px;
-  height: fit-content;
-  border: 3px solid black;
-  background-color: rgb(0, 0, 0);
 }
 
 .wrapper .drag-box {
@@ -302,10 +288,6 @@ label {
   text-align: center;
 }
 
-.col2 {
-  margin-top: 50px;
-}
-
 .rainbow-bg {
   background: rgb(232, 61, 225);
   background: -moz-linear-gradient(
@@ -392,3 +374,17 @@ bottom: -1px;
 right: -1px;
 cursor: se-resize;
 } */
+.col-md-4{
+  padding: 20px;
+}
+
+@media screen and (max-width:"768px") {
+  .meme-section {
+    display: block;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+    margin: 0;
+  }
+  
+}
